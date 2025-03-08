@@ -1,0 +1,10 @@
+[build]
+# Foca no diretório do servidor Node.js
+provider = "nodejs"
+directory = "server"
+
+[build.buildArgs]
+NIXPKGS_POSTGRESQL = "postgresql_15"
+
+[deploy]
+start = "npm start"
