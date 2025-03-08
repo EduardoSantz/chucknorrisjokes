@@ -1,0 +1,12 @@
+﻿# Dependências
+node_modules/
+
+# Ambiente
+.env
+.DS_Store
+
+# Prisma
+/prisma/migrations
+
+# Logs
+*.log

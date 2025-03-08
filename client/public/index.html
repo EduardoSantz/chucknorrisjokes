@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Piadas do Chuck Norris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://api.chucknorris.io/img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" 
+                 alt="Logo Chuck Norris" 
+                 class="main-logo">
+        </header>
+        
+        <div class="joke-card">
+            <div id="image-container">
+                <img id="chuck-image" alt="Icone Chuck Norris">
+            </div>
+            <div id="joke-container">Carregando piada...</div>
+            <div class="button-group">
+                <button id="new-joke-btn">Nova Piada</button>
+                <button id="favorite-btn">Favoritar</button>
+            </div>
+        </div>
+
+        <section class="favorites-section">
+            <h2>Favoritos Salvos</h2>
+            <div id="favorites-list"></div>
+            
+            <template id="favorite-template">
+                <div class="favorite-item">
+                    <div class="favorite-content">
+                        <img class="favorite-img" src="" alt="Favorite">
+                        <p class="favorite-text"></p>
+                    </div>
+                    <button class="delete-btn">🗑️</button>
+                </div>
+            </template>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
