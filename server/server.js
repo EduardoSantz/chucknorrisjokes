@@ -10,7 +10,7 @@ const prisma = new PrismaClient();
 // Configuração CORS para produção
 app.use(cors({
   origin: [
-    'https://chucknorrisjokes-c05ntuf7n-eduardos-projects-c7046de4.vercel.app',
+    'https://chucknorrisjokes-eight.vercel.app/',
     'http://localhost:5500'
   ]
 }));
